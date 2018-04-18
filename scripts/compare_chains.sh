@@ -22,14 +22,14 @@ read string1;
 echo -n "Enter another string:";
 read string2;
 
-if ["$ string1" == "$ string2"]
+if ["$string1" == "$string2"]
 then
-	echo "The string 1: ($ string1) is the same as the string 2: ($ string2)";
-elif ["$ string1"> "$ string2"]
+	echo "The string 1: ($string1) is the same as the string 2: ($string2)";
+elif ["$string1" > "$string2"]
 then
-	echo "The string 1: ($ string1) is greater than or equal to the string 2: ($ string2)";
+	echo "The string 1: ($string1) is greater than or equal to the string 2: ($string2)";
 else
-	echo "The string 1: ($ string1) is less than or equal to the string 2: ($ string2)";
+	echo "The string 1: ($string1) is less than or equal to the string 2: ($string2)";
 fi
 
 exit 0

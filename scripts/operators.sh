@@ -17,20 +17,20 @@ numEntero1 = 4;
 numEntero2 = 6;
 
 echo "Operations with integers";
-echo "$ (($ numEntero1 + $ numEntero2))";
-echo "$ (($ numEntero1 - $ numEntero2))";
-echo "$ (($ numEntero1 * $ numEntero2))";
-echo "$ (($ numEntero1 / $ numEntero2))";
-echo "$ (($ numEntero1% $ numEntero2))";
+echo "$(($numEntero1 + $numEntero2))";
+echo "$(($numEntero1 - $numEntero2))";
+echo "$(($numEntero1 * $numEntero2))";
+echo "$(($numEntero1 / $numEntero2))";
+echo "$(($numEntero1 % $numEntero2))";
 
 numReal1 = 1.2;
 numReal2 = 2.1;
 
 echo "Operations with real numbers";
-echo $ (echo "scale = 2; $ numReal1 + $ numReal2" | bc -l);
-echo $ (echo "scale = 2; $ numReal1 - $ numReal2" | bc -l);
-echo $ (echo "scale = 2; $ numReal1 * $ numReal2" | bc -l);
-echo $ (echo "scale = 2; $ numReal1 / $ numReal2" | bc -l);
-echo $ (echo "scale = 2; $ numReal1% $ numReal2" | bc -l);
+echo $(echo "scale = 2; $numReal1 + $numReal2" | bc -l);
+echo $(echo "scale = 2; $numReal1 - $numReal2" | bc -l);
+echo $(echo "scale = 2; $numReal1 * $numReal2" | bc -l);
+echo $(echo "scale = 2; $numReal1 / $numReal2" | bc -l);
+echo $(echo "scale = 2; $numReal1 % $numReal2" | bc -l);
 
 exit 0

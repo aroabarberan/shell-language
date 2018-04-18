@@ -13,11 +13,11 @@ read num1;
 echo -n "Enter another number:";
 read num2;
 
-if [$ num1 -ge $ num2]
+if [ $num1 -ge $num2 ]
 then
-echo "$ num1 is greater than or equal to $ num2";
+echo "$num1 is greater than or equal to $num2";
 else
-echo "$ num1 is less than or equal to $ num2";
+echo "$num1 is less than or equal to $num2";
 fi
 
 

@@ -18,13 +18,13 @@ read dir1;
 echo -n "Enter the name of another directory:";
 read dir2;
 
-if [-d $dir1] && [-d $dir2]
+if [ -d $dir1 ] && [ -d $dir2 ]
 then
-    echo "$ dir1 and $ dir2 are directories";
-elif [-d $dir1] && [! -d $dir2]
+    echo "$dir1 and $dir2 are directories";
+elif [ -d $dir1 ] && [ ! -d $dir2 ]
 then
-    echo "$ dir1 is a directory, but $ dir2 no.";
-elif [! -d $dir1] && [-d $dir2]
+    echo "$dir1 is a directory, but $dir2 no.";
+elif [ ! -d $dir1 ] && [ -d $dir2 ]
 then
     echo "$dir2 is a directory, but $dir1 no.";
 else

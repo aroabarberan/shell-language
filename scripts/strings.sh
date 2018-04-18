@@ -27,14 +27,14 @@ read variable7;
 echo "Give me a string with single quotes and with blank spaces";
 read variable8;
 
-echo $ variable1;
-echo $ variable2;
-echo $ variable3;
-echo $ variable4;
-echo $ variable5;
-echo $ variable6;
-echo $ variable7;
-echo $ variable8;
+echo $variable1;
+echo $variable2;
+echo $variable3;
+echo $variable4;
+echo $variable5;
+echo $variable6;
+echo $variable7;
+echo $variable8;
 
 echo "Give me a string with three words separated by spaces:";
 read variable9 variables10 variable11;
@@ -45,11 +45,11 @@ read variable12 variables13;
 echo "Give me a string with three words separated by spaces:";
 read variable14;
 
-echo $ variable9;
-echo $ variable10;
-echo $ variable11;
-echo $ variable12;
-echo $ variable13;
-echo $ variable14;
+echo $variable9;
+echo $variable10;
+echo $variable11;
+echo $variable12;
+echo $variable13;
+echo $variable14;
 
 exit 0
