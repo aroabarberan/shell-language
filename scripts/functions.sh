@@ -3,7 +3,7 @@
 
 clear
 
-function showMenu () {
+function showMenu() {
     echo "";
     echo "Area and perimeters:";
     echo "1. From a square.";
@@ -12,18 +12,18 @@ function showMenu () {
     echo "0. Exit.";
 }
 
-function requestData () {
+function requestData() {
     echo "Enter an option";
 }
 
-function calculateBox () {
+function calculateBox() {
     echo -n "Tell me one side:"
     read side;
     echo "The area of ​​the square is: $(echo" scale = 2; $side * $side "| bc -l)";
     echo "The perimeter of the square is: $(echo" scale = 2; $side * 4 "| bc -l)";
 }
 
-function calculateRectangulo () {
+function calculateRectangulo() {
     echo "";
     echo -n "Tell me the base of the rectangle:";
     read base;
@@ -33,7 +33,7 @@ function calculateRectangulo () {
     echo "The area of ​​the rectangle is: $(echo" scale = 2; $base * $height "| bc -l)";
     echo "The perimeter of the rectangle is: $(echo" scale = 2; (2 * $base) + (2 * $height) "| bc -l)";
 }
-function calculateCircumference () {
+function calculateCircumference() {
     echo "";
     echo -n "What is the radius of the circumference:";
     read radio;
@@ -42,7 +42,7 @@ function calculateCircumference () {
     echo "The perimeter of the circumference is: $(echo" scale = 2; 2 * 3.1416 * $radius "| bc -l)";
 }
 
-function exit () {
+function exitMenu() {
     echo "Leaving ..."
     exit 0
 }
